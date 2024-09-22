@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from around.createx.studio/signin-illustration.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:48:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>سیباس | ورود</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/custom.css">
+  </head>
+  <!-- Body-->
+  <body style="background-color:#f7f7fc;">
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper position-relative d-flex flex-column">
+            <!-- animation-->   
+        <div class="area" >
+          <ul class="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+            </ul>
+        </div >
+      <!-- Page content-->
+      <section class="container d-flex justify-content-center align-items-center pt-4 pb-4 d-rtl" style="flex: 1 0 auto;">
+        <div class="signin-form mt-3">
+          <div class="signin-form-inner">
+            <!-- Sign in view-->
+            <div class="view show " id="signin-view">
+              <div class="alert alert-primary text-md-center d-none" role="alert">
+                شماره همراه خود را وارد کنید و به جمع خانواده بزرگ سیباس بپیوند
+              </div>
+              <div class="alert alert-primary text-md-center" role="alert">
+               تا چند لحظه دیگر عضوی از خانواده بزرگ ۵۰۰ هزار نفری سیباس میشی
+              </div>
+              <img class="img-signin d-none" src="img/sibas/Asset 9.png" alt="Square image">
+              <img class="img-signin" src="img/sibas/Asset 16.png" alt="Square image">
+              <p class="fs-ms text-muted mb-3 mt-2 text-center d-none">برای  <span class="iranbold-14">ورود</span> به کلینیک یا <span class="iranbold-14">ثبت نام</span> شماره تلفن همراه خود را وارد کنید</p>
+              <p class="fs-ms text-muted mb-3 mt-2 text-center"><span class="iranbold-14">60</span> ثانیه تا ارسال مجدد کد</p>
+              <form class="needs-validation d-none" novalidate>
+                <div class="input-group mb-4"><i class="ai-phone position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                  <input class="form-control rounded " placeholder="*********09" required>
+                </div>
+                <button class="btn btn-primary d-block w-100" type="submit">دریافت کد</button>
+              </form>
+              <form class="needs-validation" novalidate>
+                <div class="input-group mb-3"><i class="ai-message-circle position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                  <input class="form-control rounded" placeholder="کد پیامک شده را اینجا وارد کنید" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3 pb-1">
+                  <button class="btn btn-outline-warning mb-2 me-5" type="button">اقا هستم</button>
+                  <button class="btn btn-outline-warning mb-2 ms-5" type="button">خانم هستم</button>
+                </div> 
+                <div class="password-toggle w-100 mb-3 d-none">
+                  <input class="form-control" type="password" placeholder="رمز عبور" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+                <button class="btn btn-primary d-block w-100" type="submit">ورود به کلینیک</button>
+                <p class="fs-sm pt-3 mb-0 text-center">رمز عبور داری? <a href='#' class='fw-medium'>ورود با رمز عبور</a></p>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+    <!-- my js-->
+  </body>
+
+<!-- Mirrored from around.createx.studio/signin-illustration.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:48:05 GMT -->
+</html>

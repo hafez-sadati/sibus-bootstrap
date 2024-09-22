@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from around.createx.studio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:42:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>سیباس</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+     <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/custom.css">
+
+  </head>
+  <!-- Body-->
+  <body class="bg-secondary">
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper position-relative">
+      <header class="header navbar navbar-expand-lg navbar-dark navbar-floating d-rtl" data-fixed-element>
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <div class="navbar-tool"><a class="navbar-tool-icon-box" href="#" ><img src="img/svg/customer-support-svgrepo-com.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="چت با کارشناس پشتیبانی سیباس" /></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#" ><i class="ai-shopping-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="سبد خرید"></i><span class="navbar-tool-badge">1</span></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#"><i class="ai-message-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="صندوق پیام ها"></i><span class="navbar-tool-badge">3</span></a></div>
+            <div class="border-start d-none d-lg-flex me-2" style="height: 30px;"></div>
+            <div class="navbar-tool d-none d-lg-flex"><a class="navbar-tool-icon-box" href="#"><i class="ai-log-out" data-bs-toggle="tooltip" data-bs-placement="bottom" title="خروج از برنامه"></i></a></div>
+          </div>
+          <div class="offcanvas offcanvas-collapse order-lg-2 menu-color-phone" id="primaryMenu">
+            <div class="offcanvas-cap navbar-shadow">
+                <div class="phone-menu">
+                  <span class="phone-menu-title position-absolute">منوی دسترسی مراجعین</span>
+                  <div class="avatar-preview">
+                    <div id="imagePreview" style="background-image: url('img/svg/brain-svgrepo-com.svg')">
+                    </div>
+                  </div>
+                  <h5 class="mt-2 mb-0 text-center position-absolute">سید حافظ ساداتی</h5>
+                  <p class="mt-2 mb-0 text-center position-absolute">شماره پرونده 456846848</p>
+                </div>
+              <button class="btn-close lead position-absolute" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item"><a class="nav-link" href="#">آشنایی با کلینیک</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">پرونده پزشکی</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">صفحه امتیازات</a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">کد تخفیف</a>
+                  <ul class="dropdown-menu text-align">
+                    <li><a class="dropdown-item" href="contacts-v1.html">ورود کد تخفیف</a></li>
+                    <li><a class="dropdown-item" href="contacts-v2.html">دعوت دوستان با کد تخفیف</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">تماس‌ با ما</a>
+                </li>
+                <li class="nav-item d-none logout"><a class="nav-link" href="#">خروج از برنامه</a>
+                </li>
+                <div class="pt-4 pb-3 holder-btns-social position-absolute">
+                  <a class="btn-social bs-outline bs-hangouts mx-2 mb-2" href="#"><i class="ai-hangouts"></i></a>
+                  <a class="btn-social bs-outline bs-twitter mx-2 mb-2" href="#"><i class="ai-telegram"></i></a>
+                  <a class="btn-social bs-outline bs-dribbble mx-2 mb-2" href="#"><i class="ai-instagram"></i></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+        <!-- Page content-->
+        <section class="position-relative bg-dark pt-7 pb-5 pb-md-7 bg-size-cover bg-attachment-fixed" style="background-image: url(img/demo/web-studio/cubes-bg.jpg);">
+            <div class="shape shape-bottom shape-curve bg-body">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+              </svg>
+            </div>
+            <div class="container position-relative zindex-5 text-center pt-md-5 pt-lg-6 py-4 my-lg-3 d-rtl">
+              <h1 class="text-light mb-0">دانستنی ها<span class="h2 d-inline-block bg-faded-primary text-primary px-3 py-2 rounded-3 me-3">مقالات علمی</span></h1>
+              <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-7 mt-2 text-center">
+                  <form class="d-rtl" action="" method="post" target="_blank">
+                    <div class="input-group flex-nowrap">
+                      <i class="ai-search position-absolute top-50 end-0 translate-middle-y text-muted me-1" style="color: #766df4 !important; font-size: xx-large;"></i>
+                      <input class="form-control rounded" type="email" name="EMAIL" placeholder="جستجو">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+      <!-- Categories-->
+      <section class="container py-5 my-4 my-sm-0 py-sm-6 py-md-7 d-rtl">
+        <div class="pb-4" data-simplebar data-simplebar-auto-hide="false">
+          <div class="d-flex justify-content-between"><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="img/demo/food-blog/categories/01.svg" alt="Healthy" style="max-width: 80px;">
+              <p class="mb-0 text-center">تغذیه</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="img/demo/food-blog/categories/02.svg" alt="Desserts" style="max-width: 80px;">
+              <p class="mb-0 text-center">بیماری ها</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="img/demo/food-blog/categories/03.svg" alt="Vegetarian" style="max-width: 80px;">
+              <p class="mb-0 text-center">ورزشکاری</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="img/demo/food-blog/categories/04.svg" alt="Seafood" style="max-width: 80px;">
+              <p class="mb-0 text-center">باور های غلط</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="img/demo/food-blog/categories/05.svg" alt="Bakery" style="max-width: 80px;">
+              <p class="mb-0 text-center">روانشناسی</p></a>
+              </div>
+        </div>
+      </section>
+        <!-- Related posts (carousel)-->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="pb-4 pb-md-5">
+                    <h2 class="h3 pb-4 d-rtl">جدیدترین مطالب</h2>
+                    <div class="tns-carousel-wrapper">
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}}}">
+                        <!-- Article-->
+                        <div class="pb-2">
+                          <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/02.jpg" alt="Post thumbnail"></a>
+                            <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">ورزشکاری</a>
+                              <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                                <div class="mt-1 text-start text-nowrap">
+                                  <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                  <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                </div>
+                            </div>
+                          </article>
+                        </div>
+                        <!-- Article-->
+                        <div class="pb-2">
+                          <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/03.jpg" alt="Post thumbnail"></a>
+                            <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">روانشناسی</a>
+                              <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                                <div class="mt-1 text-start text-nowrap">
+                                  <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                  <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                </div>
+                            </div>
+                          </article>
+                        </div>
+                        <!-- Article-->
+                        <div class="pb-2">
+                          <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/06.jpg" alt="Post thumbnail"></a>
+                            <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">بیماری</a>
+                              <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                                <div class="mt-1 text-start text-nowrap">
+                                  <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                  <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                </div>
+                            </div>
+                          </article>
+                        </div>
+                        <!-- Article-->
+                        <div class="pb-2">
+                          <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/05.jpg" alt="Post thumbnail"></a>
+                            <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">تغذیه</a>
+                              <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                                <div class="mt-1 text-start text-nowrap">
+                                  <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                  <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                </div>
+                            </div>
+                          </article>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="pb-4 pb-md-5">
+                  <h2 class="h3 pb-4 d-rtl">پربازدیدترین مطالب</h2>
+                  <div class="tns-carousel-wrapper">
+                    <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}}}">
+                      <!-- Article-->
+                      <div class="pb-2">
+                        <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/02.jpg" alt="Post thumbnail"></a>
+                          <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">بیماری ها</a>
+                            <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                              <div class="mt-1 text-start text-nowrap">
+                                <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar me-1 mt-n1"></i>1403/06/28</a> 
+                                <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-2 ai-edit-slider"></i><span class="ps-2 ms-1 mt-n1">محمد زینالی خسروشاهی</span></a>
+                              </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!-- Article-->
+                      <div class="pb-2">
+                        <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/03.jpg" alt="Post thumbnail"></a>
+                          <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">تغذیه</a>
+                            <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                              <div class="mt-1 text-start text-nowrap">
+                                <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar me-1 mt-n1"></i>1403/06/28</a> 
+                                <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-2 ai-edit-slider"></i><span class="ps-2 ms-1 mt-n1">محمد زینالی خسروشاهی</span></a>
+                              </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!-- Article-->
+                      <div class="pb-2">
+                        <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/06.jpg" alt="Post thumbnail"></a>
+                          <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">باورهای غلط</a>
+                            <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                              <div class="mt-1 text-start text-nowrap">
+                                <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar me-1 mt-n1"></i>1403/06/28</a> 
+                                <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-2 ai-edit-slider"></i><span class="ps-2 ms-1 mt-n1">محمد زینالی خسروشاهی</span></a>
+                              </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!-- Article-->
+                      <div class="pb-2">
+                        <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/05.jpg" alt="Post thumbnail"></a>
+                          <div class="card-body d-rtl"><a class="meta-link fs-sm mb-2" href="#">روانشناسی</a>
+                            <h2 class="h5 nav-heading"><a href="#">چگونه مکمل های اصل رو از تقلبی تشخیص دهیم</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                              <div class="mt-1 text-start text-nowrap">
+                                <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar me-1 mt-n1"></i>1403/06/28</a> 
+                                <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-2 ai-edit-slider"></i><span class="ps-2 ms-1 mt-n1">محمد زینالی خسروشاهی</span></a>
+                              </div>
+                          </div>
+                        </article>
+                      </div>
+                      
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>  
+    
+    </main>
+      <!-- bottom-navbar-->
+      <div class="bottom-navbar zindex-6">
+        <button >
+           <i class=' ai-map'></i>
+           <span >دفتر ثبت</span>
+        </button>
+        <button >
+            <i class='ai-plus-circle' ></i>
+            <span>سیباس پلاس</span>
+        </button>
+      <button class="">
+            <i class='ai-home' ></i>
+            <span>خانه</span>
+        </button>
+        <button >
+            <i class='ai-credit-card' ></i>
+            <span>سیباس کارت</span>
+        </button>
+        <button >
+            <i class='ai-shopping-bag' ></i>
+            <span>سفارش خدمات </span>
+        </button>
+    </div>
+    
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">بالا</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="vendor/lg-video.js/dist/lg-video.min.js"></script>
+
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from around.createx.studio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:43:23 GMT -->
+</html>

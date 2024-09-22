@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from around.createx.studio/account-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:48:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>سیباس | پنل کاربری</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/custom.css">
+
+  </head>
+  <!-- Body-->
+  <body style="background-color:#f7f7fc;">
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar (Floating light)-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+      <header class="header navbar navbar-expand-lg navbar-dark navbar-floating d-rtl" data-fixed-element>
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <div class="navbar-tool"><a class="navbar-tool-icon-box" href="#" ><img src="img/svg/customer-support-svgrepo-com.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="چت با کارشناس پشتیبانی سیباس" /></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#" ><i class="ai-shopping-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="سبد خرید"></i><span class="navbar-tool-badge">1</span></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#"><i class="ai-message-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="صندوق پیام ها"></i><span class="navbar-tool-badge">3</span></a></div>
+            <div class="border-start d-none d-lg-flex me-2" style="height: 30px;"></div>
+            <div class="navbar-tool d-none d-lg-flex"><a class="navbar-tool-icon-box" href="#"><i class="ai-log-out" data-bs-toggle="tooltip" data-bs-placement="bottom" title="خروج از برنامه"></i></a></div>
+          </div>
+          <div class="offcanvas offcanvas-collapse order-lg-2 menu-color-phone" id="primaryMenu">
+            <div class="offcanvas-cap navbar-shadow">
+                <div class="phone-menu">
+                  <span class="phone-menu-title position-absolute">منوی دسترسی مراجعین</span>
+                  <div class="avatar-preview">
+                    <div id="imagePreview" style="background-image: url('img/svg/brain-svgrepo-com.svg')">
+                    </div>
+                  </div>
+                  <h5 class="mt-2 mb-0 text-center position-absolute">سید حافظ ساداتی</h5>
+                  <p class="mt-2 mb-0 text-center position-absolute">شماره پرونده 456846848</p>
+                </div>
+              <button class="btn-close lead position-absolute" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item"><a class="nav-link" href="#">آشنایی با کلینیک</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">پرونده پزشکی</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">صفحه امتیازات</a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">کد تخفیف</a>
+                  <ul class="dropdown-menu text-align">
+                    <li><a class="dropdown-item" href="contacts-v1.html">ورود کد تخفیف</a></li>
+                    <li><a class="dropdown-item" href="contacts-v2.html">دعوت دوستان با کد تخفیف</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">تماس‌ با ما</a>
+                </li>
+                <li class="nav-item d-none logout"><a class="nav-link" href="#">خروج از برنامه</a>
+                </li>
+                <div class="pt-4 pb-3 holder-btns-social position-absolute">
+                  <a class="btn-social bs-outline bs-hangouts mx-2 mb-2" href="#"><i class="ai-hangouts"></i></a>
+                  <a class="btn-social bs-outline bs-twitter mx-2 mb-2" href="#"><i class="ai-telegram"></i></a>
+                  <a class="btn-social bs-outline bs-dribbble mx-2 mb-2" href="#"><i class="ai-instagram"></i></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Slanted background-->
+      <div class="position-relative bg-gradient" style="height: 480px;">
+        <div class="shape shape-bottom shape-slant bg-secondary d-none d-lg-block">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 260">
+            <polygon fill="currentColor" points="0,257 0,260 3000,260 3000,0"></polygon>
+          </svg>
+        </div>
+      </div>
+      <!-- Page content-->
+      <div class="container position-relative zindex-5 pb-6 mb-md-3 d-rtl" style="margin-top: -350px;">
+        <div class="row">
+          <!-- Sidebar-->
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="bg-light rounded-3 shadow-lg">
+              <div class="px-4 py-4 mb-1 text-center"><img class="d-block rounded-circle mx-auto my-2" src="img/dashboard/avatar/main.jpg" at="Amanda Wilson" width="110">
+                <h6 class="mb-0 pt-1">آنا د آرماس</h6><span class="text-muted fs-sm">شماره پرونده : 98564</span>
+              </div>
+              <div class="d-lg-none px-4 pb-4 text-center"><a class="btn btn-primary px-5 mb-2" href="#account-menu" data-bs-toggle="collapse"><i class="ai-menu ms-2"></i>منو کاربری</a></div>
+              <div class="d-lg-block collapse pb-2" id="account-menu">
+                <h3 class="d-block bg-secondary fs-sm fw-semibold text-muted mb-0 px-4 py-3">داشبورد</h3>
+                <a class="d-flex align-items-center nav-link-style px-4 py-3 border-top" href="dashboard-orders.html"><i class="ai-file-text fs-lg opacity-60 ms-2"></i>پرونده پزشکی</a>
+                <a class="d-flex align-items-center nav-link-style px-4 py-3 border-top active" href="dashboard-messages.html"><i class="ai-users fs-lg opacity-60 ms-2"></i>چت آنلاین<span class="nav-indicator me-1"></span><span class="text-muted fs-sm fw-normal ms-auto">1</span></a>
+                <a class="d-flex align-items-center nav-link-style px-4 py-3 border-top" href="dashboard-messages.html"><i class="ai-message-circle fs-lg opacity-60 ms-2"></i>پیام‌ها<span class="nav-indicator me-1"></span><span class="text-muted fs-sm fw-normal ms-auto">9</span></a>
+                <a class="d-flex align-items-center nav-link-style px-4 py-3 border-top" href="account-payment.html"><i class="ai-shopping-bag fs-lg opacity-60 ms-2"></i>پرداخت‌ها</a>
+                <a class="d-flex align-items-center nav-link-style px-4 py-3 border-top" href="account-profile.html"><i class="ai-settings fs-lg opacity-60 ms-2"></i>اطلاعات حساب کاربری</a>
+                <a class="d-flex align-items-center nav-link-style px-4 py-3 border-top" href="signin-illustration.html"><i class="ai-log-out fs-lg opacity-60 ms-2"></i>خروج</a>
+              </div>
+            </div>
+          </div>
+          <!-- Content-->
+          <div class="col-lg-8">
+            <div class="d-flex flex-column h-100 bg-light rounded-3 shadow-lg p-4 chat-box">
+                <div class="navbar card-header w-100 mx-0 px-4">
+                    <div class="d-flex align-items-center w-100 px-sm-3">
+                      <div class="position-relative flex-shrink-0">
+                        <img class="rounded-circle" src="img/sibas/Asset 11.png" width="48" alt="Avatar">
+                        <span class="position-absolute bottom-0 start-0 bg-success border border-white rounded-circle ms-1" style="width: .625rem; height: .625rem;"></span>
+                      </div>
+                      <div class="h6 pe-2 me-1 mb-0">تیم پشتیبانی سیباس</div>
+                    </div>
+                </div>
+                <div class="card-body pb-0 pt-4">
+                    <div class="simplebar-wrapper" style="margin: -24px -38px 0px;">
+                        <div class="content" style="padding: 24px 38px 0px;">
+                            <div class="text-body-secondary text-center mb-4"><button class="btn btn-info">دیدن پیام های قبلی</button></div>
+                            <div class="text-body-secondary text-center my-4">1403/06/25</div>
+                            <!-- Message -->
+                            <div class="mb-3 me-auto" style="max-width: 392px;">
+                              <div class="d-flex align-items-end mb-2 ms-0 ps-0 d-ltr">
+                                <div class="flex-shrink-0 pe-2 me-1">
+                                    <img class="rounded-circle" src="img/sibas/Asset 11.png" width="48" alt="Avatar">
+                                </div>
+                                <div class="message-box-start text-dark d-rtl">سلام چه کمکی میتونم انجام بدم!</div>
+                              </div>
+                              <div class="fs-xs text-body-secondary text-start">11:32 am</div>
+                            </div>
+        
+                            <!-- Message -->
+                            <div class="mb-3" style="max-width: 392px;">
+                              <div class="d-flex align-items-end mb-2">
+                                <div class="flex-shrink-0 ps-2 ms-1">
+                                    <img class="rounded-circle" src="img/dashboard/avatar/main.jpg" width="48" alt="Avatar">
+                                  </div>
+                                <div class="message-box-end bg-primary text-white">سلام! من میخاستم بدونم میتونم از تخفیف های جدید سایت استفاده کنم؟</div>
+                              </div>
+                              <div class="fs-xs text-body-secondary">
+                                <i class="ai-checks text-primary fs-xl mt-n1 me-1"></i>
+                                2:18 pm
+                              </div>
+                            </div>
+        
+                            <!-- Message -->
+                            <div class="mb-3 me-auto" style="max-width: 392px;">
+                              <div class="d-flex align-items-end mb-2 d-ltr">
+                                <div class="flex-shrink-0 pe-2 me-1">
+                                  <img class="rounded-circle" src="img/sibas/Asset 11.png" width="48" alt="Avatar">
+                                </div>
+                                <div class="w-100 d-rtl">
+                                  <div class="message-box-start text-dark mb-2">چند نفر رو به سایت دعوت کردید؟</div>
+                                  <div class="message-box-start text-dark">با کد خودتون</div>
+                                </div>
+                              </div>
+                              <div class="fs-xs text-body-secondary text-start">4:04 am</div>
+                            </div>
+        
+                            <!-- Message -->
+                            <div class="mb-3" style="max-width: 392px;">
+                              <div class="d-flex align-items-end mb-2">
+                                <div class="flex-shrink-0 ps-2 ms-1">
+                                    <img class="rounded-circle" src="img/dashboard/avatar/main.jpg" width="48" alt="Avatar">
+                                  </div>
+                                <div class="message-box-end bg-primary text-white">کلا 5 نفر</div>
+                              </div>
+                              <div class="fs-xs text-body-secondary">
+                                <i class="ai-check text-primary fs-xl mt-n1 me-1"></i>
+                                2:18 pm
+                              </div>
+                            </div>
+                            <div class="text-body-secondary text-center my-4">امروز</div>
+        
+                            <!-- Message -->
+                            <div class="mb-3 me-auto" style="max-width: 392px;">
+                              <div class="d-flex align-items-end mb-2 d-ltr">
+                                <div class="flex-shrink-0 pe-2 me-1">
+                                  <img class="rounded-circle" src="img/sibas/Asset 11.png" width="48" alt="Avatar">
+                                </div>
+                                <div class="message-box-start text-dark d-rtl">jc45234 کد تخفیف 25 درصد 😊</div>
+                              </div>
+                              <div class="fs-xs text-body-secondary text-start">10:17 am</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-end border rounded-3 pb-3 pe-3 mx-sm-3">
+                    <textarea class="form-control border-0" rows="3" placeholder="متن پیام" style="resize: none;"></textarea>
+                    <div class="nav flex-nowrap align-items-center">
+                      <button class="btn btn-sm btn-secondary ms-3" type="button"><i class="ai-send fs-xl"></i> ارسال</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      <!-- bottom-navbar-->
+      <div class="bottom-navbar zindex-6">
+        <button>
+           <i class=' ai-map'></i>
+           <span >دفتر ثبت</span>
+        </button>
+        <button >
+            <i class='ai-plus-circle' ></i>
+            <span>سیباس پلاس</span>
+        </button>
+      <button>
+            <i class='ai-home' ></i>
+            <span>خانه</span>
+        </button>
+        <button >
+            <i class='ai-credit-card' ></i>
+            <span>سیباس کارت</span>
+        </button>
+        <button >
+            <i class='ai-shopping-bag' ></i>
+            <span>سفارش خدمات </span>
+        </button>
+      </div>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from around.createx.studio/account-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:48:03 GMT -->
+</html>

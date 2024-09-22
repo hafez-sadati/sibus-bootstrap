@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from around.createx.studio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:42:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>سیباس</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+     <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/custom.css">
+
+  </head>
+  <!-- Body-->
+  <body class="bg-secondary">
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper position-relative">
+      <header class="header navbar navbar-expand-lg navbar-dark navbar-floating d-rtl" data-fixed-element>
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <div class="navbar-tool"><a class="navbar-tool-icon-box" href="#" ><img src="img/svg/customer-support-svgrepo-com.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="چت با کارشناس پشتیبانی سیباس" /></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#" ><i class="ai-shopping-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="سبد خرید"></i><span class="navbar-tool-badge">1</span></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#"><i class="ai-message-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="صندوق پیام ها"></i><span class="navbar-tool-badge">3</span></a></div>
+            <div class="border-start d-none d-lg-flex me-2" style="height: 30px;"></div>
+            <div class="navbar-tool d-none d-lg-flex"><a class="navbar-tool-icon-box" href="#"><i class="ai-log-out" data-bs-toggle="tooltip" data-bs-placement="bottom" title="خروج از برنامه"></i></a></div>
+          </div>
+          <div class="offcanvas offcanvas-collapse order-lg-2 menu-color-phone" id="primaryMenu">
+            <div class="offcanvas-cap navbar-shadow">
+                <div class="phone-menu">
+                  <span class="phone-menu-title position-absolute">منوی دسترسی مراجعین</span>
+                  <div class="avatar-preview">
+                    <div id="imagePreview" style="background-image: url('img/svg/brain-svgrepo-com.svg')">
+                    </div>
+                  </div>
+                  <h5 class="mt-2 mb-0 text-center position-absolute">سید حافظ ساداتی</h5>
+                  <p class="mt-2 mb-0 text-center position-absolute">شماره پرونده 456846848</p>
+                </div>
+              <button class="btn-close lead position-absolute" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item"><a class="nav-link" href="#">آشنایی با کلینیک</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">پرونده پزشکی</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">صفحه امتیازات</a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">کد تخفیف</a>
+                  <ul class="dropdown-menu text-align">
+                    <li><a class="dropdown-item" href="contacts-v1.html">ورود کد تخفیف</a></li>
+                    <li><a class="dropdown-item" href="contacts-v2.html">دعوت دوستان با کد تخفیف</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">تماس‌ با ما</a>
+                </li>
+                <li class="nav-item d-none logout"><a class="nav-link" href="#">خروج از برنامه</a>
+                </li>
+                <div class="pt-4 pb-3 holder-btns-social position-absolute">
+                  <a class="btn-social bs-outline bs-hangouts mx-2 mb-2" href="#"><i class="ai-hangouts"></i></a>
+                  <a class="btn-social bs-outline bs-twitter mx-2 mb-2" href="#"><i class="ai-telegram"></i></a>
+                  <a class="btn-social bs-outline bs-dribbble mx-2 mb-2" href="#"><i class="ai-instagram"></i></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+        <!-- Page content-->
+        <section class="position-relative bg-gradient2 pt-4">
+            <div class="shape shape-bottom shape-curve bg-body shape.bg-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+              </svg>
+            </div>
+            <!-- Tabs-->
+            <div class="container mt-6 d-rtl">
+              <div class="row align-items-center">
+                <div class="col-12 pb-4 text-center">
+                    <h3 class="text-light pb-1 line-height-h3">سفارش خدمات</h3>
+                    <p class="text-light opacity-80 pb-2 pb-md-4">با انتخاب یک یا چند مورد از گزینه های زیر میتونی خدمات مدنظرت رو انتخاب کنی. اگر مطمئن نیستی که کدوم یک از خدمات برات مناسب تره میتونی با ما تماس بگیری و یا درخواست مشاروه جهت انتخاب خدمات بدی تا خودمون باهاتون تماس بگیریم</p>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <div class="container py-4 mb-5 mb-sm-0 pb-sm-5 d-rtl">
+          <div class="row">
+                <div class="col-sm-3"><h5 style="line-height: 2;">نوع خدمات :</h5></div>
+                <div class="col-4 col-sm-3"><button type="button" class="btn btn-primary ">رژیم غذایی</button></div>
+                <div class="col-4 col-sm-3"><button type="button" class="btn btn-primary ">برنامه ورزشی</button></div>
+                <div class="col-4 col-sm-3"><button type="button" class="btn btn-translucent-primary">مشاوره روان</button></div>
+          </div>
+          <div class="row mt-5 mt-sm-4">
+              <div class="col-sm-3 "><h5 style="line-height: 2;">مدت خدمات :</h5></div>
+              <div class="col-4 col-sm-3"><button type="button" class="btn btn-primary ">یک ماه</button></div>
+              <div class="col-4 col-sm-3"><button type="button" class="btn btn-translucent-primary">سه ماهه</button></div>
+              <div class="col-4 col-sm-3"></div>
+          </div>
+          <div class="row justify-content-center py-5">
+            <div class="col-lg-10">
+              <div class="bg-light shadow-lg rounded-3 pt-3 px-4 position-relative order-img-detail-for">
+                <img src="img/sibas/O-Asset 9.png" class="order-img-detail" alt="">
+                <div class="pt-3 px-3">
+                  <div class="d-md-flex align-items-start border-bottom py-4 py-sm-5 position-relative">
+                    <div class="ms-4 ms-sm-0 py-2 w-100" style="max-width: 20rem;">
+                      <img src="img/sibas/O-Asset 14.png" class="order-img-bmi" alt="">
+                      <div class="fs-sm">برنامه رژیم غذایی + برنامه ورزشی + مشاوره روان شناسی</div>
+                      <h3 class="my-2 text-success">یک ماهه</h3>
+                      <button class="btn btn-success position-relative zindex-1 fs-sm"><i class="ai-shopping-cart"></i> افزودن به سبد خرید</button>
+                    </div>
+                    <div class="d-flex w-100 align-items-end py-3 py-sm-2 px-4 px-sm-0" style="max-width: 16rem;">
+                      <span class="display-4 fw-normal text-primary px-1 me-2">۴۵۹۰۰۰</span>
+                      <span class="h3 fs-lg fw-medium text-muted mb-2">تومان</span>
+                    </div>
+                    <ul class="list-unstyled py-2 mb-0 px-0">
+                      <li class="d-flex align-items-center text-nowrap mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>پشتیبانی 24 ساعته</span></li>
+                      <li class="d-flex align-items-center text-nowrap mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>تماس مستقیم با متخصص تغذیه</span></li>
+                      <li class="d-flex align-items-center text-nowrap mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>پایش هفتگی از طریق تماس تلفنی</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3 mt-5">
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter">
+              <div class="card card-active w-100">
+                <div class="card-img-top bg-gradient text-center py-5 px-grid-gutter">
+                  <h3 class="text-light mb-0">برنامه رژیم غذایی + برنامه ورزشی + مشاوره روان شناسی</h3>
+                </div>
+                <div class="card-body px-grid-gutter py-grid-gutter position-relative">
+                  <img src="img/sibas/O-Asset 14.png" class="order-img-bmi2" alt="">
+                  <div class="d-flex align-items-end py-2 px-2 mb-4">
+                    <span class="h3 fs-lg fw-bold mb-2 text-success">۱ ماهه</span>
+                    <span class="display-6 fw-normal text-primary px-1 me-2">۴۵۹۰۰۰</span>
+                    <span class="h3 fs-lg fw-medium text-muted mb-2">تومان</span>
+                  </div>
+                  <ul class="list-unstyled px-1 py-2 mb-4">
+                    <li class="d-flex align-items-center mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>پشتیبانی 24 ساعته</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>امکان تغییر آیتم های غذایی</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>حرکات اصلاحی درصورت آسیب ورزشی</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>تماس مستقیم با متخصص تغذیه</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>جدیدترین تست راونشناسی با تفسیر</span></li>
+                    <li class="d-flex align-items-center mb-3"><i class="ai-check fs-xl text-primary ms-2"></i><span>پایش فهتگی از طریق تماس تلفنی</span></li>
+                    <li class="d-flex align-items-center text-primary mb-3"><i class="ai-more-horizontal fs-xl ms-2"></i><a href="#">بستن جزئیات</a></li>
+                  </ul>
+                  <div class="text-center mb-2"><button class="btn btn-success position-relative zindex-1 fs-sm ms-2"><i class="ai-shopping-cart"></i> افزودن به سبد خرید</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+      <!-- bottom-navbar-->
+      <div class="bottom-navbar zindex-6">
+        <button >
+           <i class=' ai-map'></i>
+           <span >دفتر ثبت</span>
+        </button>
+        <button >
+            <i class='ai-plus-circle' ></i>
+            <span>سیباس پلاس</span>
+        </button>
+      <button class="">
+            <i class='ai-home' ></i>
+            <span>خانه</span>
+        </button>
+        <button >
+            <i class='ai-credit-card' ></i>
+            <span>سیباس کارت</span>
+        </button>
+        <button class="active">
+            <i class='ai-shopping-bag' ></i>
+            <span>سفارش خدمات </span>
+        </button>
+    </div>
+    
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">بالا</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from around.createx.studio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:43:23 GMT -->
+</html>

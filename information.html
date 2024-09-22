@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from around.createx.studio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:42:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>سیباس</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/flatpickr/dist/flatpickr.min.css"/>
+     <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/custom.css">
+
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper position-relative">
+
+      <!-- Navbar Floating light for Index page only-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+      <!-- navbar-dark == navbar-light bg-light-->
+      <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-shadow navbar-floating d-rtl" data-fixed-element>
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <div class="navbar-tool"><a class="navbar-tool-icon-box" href="#" ><img src="img/svg/customer-support-svgrepo-com.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="چت با کارشناس پشتیبانی سیباس" /></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#" ><i class="ai-shopping-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="سبد خرید"></i><span class="navbar-tool-badge">1</span></a></div>
+            <div class="border-start me-2" style="height: 30px;"></div>
+            <div class="navbar-tool me-2"><a class="navbar-tool-icon-box" href="#"><i class="ai-message-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="صندوق پیام ها"></i><span class="navbar-tool-badge">3</span></a></div>
+            <div class="border-start d-none d-lg-flex me-2" style="height: 30px;"></div>
+            <div class="navbar-tool d-none d-lg-flex"><a class="navbar-tool-icon-box" href="#"><i class="ai-log-out" data-bs-toggle="tooltip" data-bs-placement="bottom" title="خروج از برنامه"></i></a></div>
+          </div>
+          <div class="offcanvas offcanvas-collapse order-lg-2 menu-color-phone" id="primaryMenu">
+            <div class="offcanvas-cap navbar-shadow">
+                <div class="phone-menu">
+                  <span class="phone-menu-title position-absolute">منوی دسترسی مراجعین</span>
+                  <div class="avatar-preview">
+                    <div id="imagePreview" style="background-image: url('img/svg/brain-svgrepo-com.svg')">
+                    </div>
+                  </div>
+                  <h5 class="mt-2 mb-0 text-center position-absolute">سید حافظ ساداتی</h5>
+                  <p class="mt-2 mb-0 text-center position-absolute">شماره پرونده 456846848</p>
+                </div>
+              <button class="btn-close lead position-absolute" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item"><a class="nav-link" href="#">آشنایی با کلینیک</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">پرونده پزشکی</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">صفحه امتیازات</a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">کد تخفیف</a>
+                  <ul class="dropdown-menu text-align">
+                    <li><a class="dropdown-item" href="contacts-v1.html">ورود کد تخفیف</a></li>
+                    <li><a class="dropdown-item" href="contacts-v2.html">دعوت دوستان با کد تخفیف</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">تماس‌ با ما</a>
+                </li>
+                <li class="nav-item d-none logout"><a class="nav-link" href="#">خروج از برنامه</a>
+                </li>
+                <div class="pt-4 pb-3 holder-btns-social position-absolute">
+                  <a class="btn-social bs-outline bs-hangouts mx-2 mb-2" href="#"><i class="ai-hangouts"></i></a>
+                  <a class="btn-social bs-outline bs-twitter mx-2 mb-2" href="#"><i class="ai-telegram"></i></a>
+                  <a class="btn-social bs-outline bs-dribbble mx-2 mb-2" href="#"><i class="ai-instagram"></i></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+         <!-- Page content-->
+         <div class="sidebar-enabled sidebar-end">
+            <div class="container">
+              <div class="row">
+                <!-- Content-->
+                <div class="col-lg-9 content py-4 mb-2 mb-sm-0 pb-sm-5">
+                    <div class="pb-4 mt-lg-6 mt-5 d-rtl">
+                      <nav aria-label="breadcrumb">
+                        <ol class="py-1 my-2  breadcrumb">
+                          <li class="breadcrumb-item"><a href="index-2.html">سیباس</a></li>
+                          <li class="breadcrumb-item"><a href="#">مقالات علمی</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">ورزشکاری</li>
+                        </ol>
+                      </nav>
+                      <h3 class="">چه میزان مواجهه یا نور آفتاب برای تاّمین ویتامین دی مورد نیاز بدن کافی است؟</h3>
+                    </div>
+                    <!-- Post author + Sharing-->
+                    <div class="row position-relative g-0 align-items-center border-top border-bottom mb-4 d-rtl">
+                      <div class="col-md-6 py-3 ps-md-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                          <div class="d-flex align-items-center"><a class="d-block" href="#"><img class="rounded-circle ms-1" src="img/blog/single/author.jpg" alt="Emma Brown" width="64"></a>
+                            <div class="pe-2">
+                              <h6 class="nav-heading mb-1"><a href="#">آنا د آرماس</a></h6>
+                              <div class="text-nowrap">
+                                <div class="meta-link fs-xs"><i class="ai-calendar ms-1 align-vertical"></i>1403/06/16</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-none d-md-block position-absolute border-start h-100" style="top: 0; left: 50%; width: 1px;"></div>
+                      <div class="col-md-6 ps-md-3 py-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                          <h6 class="text-nowrap my-2 me-3">اشتراک گذاری:</h6>
+                          <a class="btn-social bs-outline bs-telegram me-2 ms-2 my-2" href="#"><i class="ai-telegram"></i></a>
+                          <a class="btn-social bs-outline bs-whatsapp ms-2 my-2" href="#"><i class="ai-phone"></i></a>
+                          <a class="btn-social bs-outline bs-instagram ms-2 my-2" href="#"><i class="ai-instagram"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Post content-->
+                    <p class="py-3 d-rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد،</p>
+                    <h5 class="h3 pt-2 pb-4 d-rtl">کمبود ویتامین دی مادر چه اثری بر نوزاد دارد؟</h5>
+                    <div class="content order-lg-1" id="gallery">
+                        <div class="gallery">
+                          <a class="gallery-item rounded-3 mb-grid-gutter" href="img/portfolio/single/01.jpg"><img src="img/portfolio/single/th07.jpg" alt="Gallery thumbnail"></a>
+                          <!-- <a class="gallery-item rounded-3 mb-grid-gutter" href="img/portfolio/single/02.jpg"><img src="img/portfolio/single/th08.jpg" alt="Gallery thumbnail"></a> -->
+                        </div>
+                    </div>
+                    <div class="py-4">
+                      <p class="pt-3 d-rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                      <p class="d-rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد</p>
+                    </div>
+                    <p class="py-3 d-rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد</p>
+                    <!-- Related posts (carousel)-->
+                    <div class="pb-4 pb-md-5 mb-5 mb-md-0">
+                      <h2 class="h3 pb-4 d-rtl">مقالات مرتبط</h2>
+                      <div class="tns-carousel-wrapper ">
+                        <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}}}">
+                          <!-- Article-->
+                          <div class="pb-2">
+                            <article class="card card-hover d-rtl"><a class="card-img-top" href="blog-single-ls.html"><img src="img/blog/01.jpg" alt="Post thumbnail"></a>
+                              <div class="card-body"><a class="meta-link fs-sm mb-2" href="#">تغذیه</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="blog-single-ls.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</a></h2>
+                                <div class="mt-1 text-start text-nowrap">
+                                  <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                  <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                          <!-- Article-->
+                          <div class="pb-2">
+                            <article class="card card-hover d-rtl"><a class="card-img-top" href="blog-single-ls.html"><img src="img/blog/06.jpg" alt="Post thumbnail"></a>
+                              <div class="card-body"><a class="meta-link fs-sm mb-2" href="#">بیماری‌ها</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="blog-single-ls.html">لورم ایپسوم متن ساختگی و مجله در ستون و سطرآنچنان که لازم است</a></h2>
+                                  <div class="mt-1 text-start text-nowrap">
+                                    <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                    <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                  </div>
+                              </div>
+                            </article>
+                          </div>
+                          <!-- Article-->
+                          <div class="pb-2">
+                            <article class="card card-hover d-rtl"><a class="card-img-top" href="blog-single-ls.html"><img src="img/blog/03.jpg" alt="Post thumbnail"></a>
+                              <div class="card-body"><a class="meta-link fs-sm mb-2" href="#">بیماری‌ها</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="blog-single-ls.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#">
+                                  <div class="mt-1 text-start text-nowrap">
+                                    <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                    <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                  </div>
+                              </div>
+                            </article>
+                          </div>
+                          <!-- Article-->
+                          <div class="pb-2">
+                            <article class="card card-hover d-rtl"><a class="card-img-top" href="blog-single-ls.html"><img src="img/blog/07.jpg" alt="Post thumbnail"></a>
+                              <div class="card-body"><a class="meta-link fs-sm mb-2" href="#">روانشناسی</a>
+                                <h2 class="h5 nav-heading mb-4"><a href="blog-single-ls.html">لورم ایپسوم متن ساختگی و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</a></h2>
+                                  <div class="mt-1 text-start text-nowrap">
+                                    <a class="meta-link fs-xs position-absolute" style="right:10px;" href="#"><i class="ai-calendar ms-1 mt-n1"></i>1403/06/28</a> 
+                                    <a class="meta-link fs-xs" href="#"><i class="sr-star ai-edit active ms-1 ai-edit-slider"></i><span class="mt-n1">محمد زینالی خسروشاهی</span></a>
+                                  </div>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Sidebar-->
+                <div class="sidebar col-lg-3 pt-lg-5">
+                  <div class="offcanvas offcanvas-end offcanvas-collapse" id="blog-sidebar">
+                    <div class="offcanvas-cap navbar-shadow px-4 mb-3">
+                      <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body px-4 pt-3 pt-lg-0 pe-lg-0 ps-lg-2 ps-xl-4 d-rtl" data-simplebar>
+                      <!-- Search-->
+                      <div class="widget mb-5">
+                        <h3 class="widget-title">جستجو مقالات علمی</h3>
+                        <div class="input-group"><i class="ai-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                          <input class="form-control rounded" type="text" placeholder="Search">
+                        </div>
+                      </div>
+                      <!-- Categories-->
+                      <div class="widget widget-categories mb-5">
+                        <h3 class="widget-title">دسته‌بندی‌ها</h3>
+                        <ul>
+                          <li><a class="widget-link" href="#">تغذیه<small class="text-muted pe-1 me-2">23</small></a></li>
+                          <li><a class="widget-link" href="#">بیماری‌ها<small class="text-muted pe-1 me-2">14</small></a></li>
+                          <li><a class="widget-link" href="#">ورزشکاری<small class="text-muted pe-1 me-2">7</small></a></li>
+                          <li><a class="widget-link" href="#">باورهای غلط<small class="text-muted pe-1 me-2">19</small></a></li>
+                          <li><a class="widget-link" href="#">روانشناسی<small class="text-muted pe-1 me-2">35</small></a></li>
+                        </ul>
+                      </div>
+                      <!-- Featured posts-->
+                      <div class="widget mt-n1 mb-5">
+                        <h3 class="widget-title pb-1">نتایج جستجو</h3>
+                        <div class="d-flex align-items-center pb-1 mb-3"><a class="d-block flex-shrink-0" href="#"><img class="rounded" src="img/blog/th01.jpg" alt="Post" width="64"></a>
+                          <div class="pe-2 me-1">
+                            <h4 class="fs-md nav-heading mb-1"><a class="fw-medium" href="#">چگونه لاغر شویم؟</a></h4>
+                            <p class="fs-xs text-muted mb-0">1403/06/29</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center pb-1 mb-3"><a class="d-block flex-shrink-0" href="#"><img class="rounded" src="img/blog/th02.jpg" alt="Post" width="64"></a>
+                          <div class="pe-2 me-1">
+                            <h4 class="fs-md nav-heading mb-1"><a class="fw-medium" href="#">بهترین مکمل های موجود در ایران</a></h4>
+                            <p class="fs-xs text-muted mb-0">1401/08/09</p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="#"><img class="rounded" src="img/blog/th03.jpg" alt="Post" width="64"></a>
+                          <div class="pe-2 me-1">
+                            <h4 class="fs-md nav-heading mb-1"><a class="fw-medium" href="#">تمام ویتامین های مورد نیاز بدن که بایدآن‌ها رو مصرف کنیم</a></h4>
+                            <p class="fs-xs text-muted mb-0">1399/01/05</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- Sidebar toggle button-->
+              <button class="btn btn-primary btn-sm sidebar-toggle ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#blog-sidebar"><i class="ai-sidebar fs-base me-2"></i>فیلتر</button>
+              </div>
+            </div>
+          </div>
+    </main>
+      <!-- bottom-navbar-->
+      <div class="bottom-navbar zindex-6">
+        <button >
+           <i class=' ai-map'></i>
+           <span >دفتر ثبت</span>
+        </button>
+        <button >
+            <i class='ai-plus-circle' ></i>
+            <span>سیباس پلاس</span>
+        </button>
+      <button class="">
+            <i class='ai-home' ></i>
+            <span>خانه</span>
+        </button>
+        <button >
+            <i class='ai-credit-card' ></i>
+            <span>سیباس کارت</span>
+        </button>
+        <button >
+            <i class='ai-shopping-bag' ></i>
+            <span>سفارش خدمات </span>
+        </button>
+    </div>
+    
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">بالا</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
+
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from around.createx.studio/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Mar 2021 20:43:23 GMT -->
+</html>
